@@ -1,0 +1,3 @@
+docker
+docker run -d --name  comgraphic -p 8080:8080 rapidfort/apache
+docker ps -a

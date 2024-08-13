@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athiwat</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Athiwat Jantasri 653120100116</h1>
+        <h2>คอมพิวเตอร์กราฟฟิกส์</h2>
+        <nav>
+            <ul>
+                <li><a href="Lab2/lab02.html">Lab 2</a></li>
+                <li><a href="Lab3/lab03.html">Lab 3</a></li>
+                <li><a href="Lab4/lab04.html">Lab 4</a></li>
+                <li><a href="Lab5/lab5.html">Lab 5</a></li>
+                <li><a href="Lab6/lab06.html">Lab 6</a></li>
+                <li><a href="Lab7/lab07.html">Lab 7</a></li>
+                <li><a href="Lab8/lab8.html">Lab8</a></li>
+                <li><a href="Lab09/lab09.html">Lab10</a></li>
+                <li><a href="Lab10/Lab10.html">Lab10</a></li>
+
+
+
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="container">
+        <h1 id="student-name">Athiwat Jantasri</h1>
+        <p id="student-id">653120100116</p>
+        <button id="language-button" onclick="toggleLanguage()">ภาษาไทย</button>
+    </div>
+
+    <script>
+        let isThai = false;
+        
+        function toggleLanguage() {
+            const nameElement = document.getElementById('student-name');
+            const buttonElement = document.getElementById('language-button');
+            if (isThai) {
+                nameElement.innerHTML = 'Athiwat Jantasri';
+                buttonElement.innerHTML = 'ภาษาไทย';
+                isThai = false;
+            } else {
+                nameElement.innerHTML = 'อธิวัฒน์ จันทะศรี';
+                buttonElement.innerHTML = 'English';
+                isThai = true;
+            }
+        }
+    </script>
+</body>
+</html>
